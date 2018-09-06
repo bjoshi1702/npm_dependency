@@ -1,0 +1,26 @@
+Step 1: Install node from https://nodejs.org/en/download/current/
+	- install npm
+	- npm install fs
+	- npm install node-fetch
+
+Step 2: Download project folder
+
+Step 3: Run npm-dep-viz.js
+	- node npm-dep-viz.js <package-name>
+
+Step 4: Using optional arguments
+	- --devDependecies : Show dependency tree for DevDependency.
+	- --peerDependecies : Show dependency tree for PeerDependency.
+	- --version=<version-number> : Display tree for given version.
+	- --at-date=<date> : Display tree for latest version availble at given date.
+	- --json : Display machine readable json data.
+
+
+Access local file within chrome.
+	- Google chrome does not allow to access local file.
+	- To overcome, execute following command before doing step 3 and 4.
+	- Windows:
+		- "C:\PathTo\chrome.exe" --allow-file-access-from-files
+	- Linux/Mac:
+		- open /Applications/Google\ Chrome.app --args --allow-file-access-from-files
+
