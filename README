@@ -1,26 +1,41 @@
-Step 1: Install node from https://nodejs.org/en/download/current/
-	- install npm
-	- npm install fs
-	- npm install node-fetch
+### Step 1: 
+Install node from [here](https://nodejs.org/en/download/current/).
 
-Step 2: Download project folder
+Execute the following commands.
+* install npm
+* npm install fs
+* npm install node-fetch
 
-Step 3: Run npm-dep-viz.js
-	- node npm-dep-viz.js <package-name>
+### Step 2: 
+Download project folder
 
-Step 4: Using optional arguments
-	- --devDependecies : Show dependency tree for DevDependency.
-	- --peerDependecies : Show dependency tree for PeerDependency.
-	- --version=<version-number> : Display tree for given version.
-	- --at-date=<date> : Display tree for latest version availble at given date.
-	- --json : Display machine readable json data.
+### Step 3: 
+Run npm-dep-viz.js
+* node npm-dep-viz.js <package-name>
+
+### Step 4: 
+Using optional arguments
+* --devDependecies : Show dependency tree for DevDependency.
+* --peerDependecies : Show dependency tree for PeerDependency.
+* --version=<version-number> : Display tree for given version.
+* --at-date=<date> : Display tree for latest version availble at given date.
+* --json : Display machine readable json data.
 
 
-Access local file within chrome.
-	- Google chrome does not allow to access local file.
-	- To overcome, execute following command before doing step 3 and 4.
-	- Windows:
-		- "C:\PathTo\chrome.exe" --allow-file-access-from-files
-	- Linux/Mac:
-		- open /Applications/Google\ Chrome.app --args --allow-file-access-from-files
+## Access local file within chrome.
+* Google chrome does not allow to access local file.
+* To overcome, execute following command before doing step 3 and 4.
+* Windows:
+     - "C:\PathTo\chrome.exe" --allow-file-access-from-files
+* Linux/Mac:
+     - open /Applications/Google\ Chrome.app --args --allow-file-access-from-files
 
+## Reference images.
+* Dependency tree for package **browserify**.
+![](https://github.com/bjoshi1702/npm_dependency/blob/master/output_image/ss_dependency_tree.png)
+
+* Dev dependency tree for package **webpack**.
+![](https://github.com/bjoshi1702/npm_dependency/blob/master/output_image/ss_devDependency_tree.png)
+
+* Peer dependency tree for package **winston-mail**.
+![](https://github.com/bjoshi1702/npm_dependency/blob/master/output_image/ss_peerDependency_tree.png)
